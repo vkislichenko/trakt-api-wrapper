@@ -22,6 +22,7 @@ class Add extends AbstractRequest
     public function __construct(AccessToken $token, $items)
     {
         parent::__construct();
+        $this->setToken($token);
         $this->items = $items;
     }
 
